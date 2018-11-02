@@ -1,0 +1,23 @@
+server:
+  port: 6677
+spring:
+  application:
+    name: springboot-gateway
+zuul:
+  routes:
+    item-service:
+      path: /item-service/**
+      #url: http://127.0.0.1:8081
+      serviceId: springboot-item
+    order-service:
+      path: /order-service/**
+      serviceId: springboot-order
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    allow-redirects: true
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8088/eureka/
+  instance:
+      prefer-ip-address: true
