@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springcloud-eureka
+  security:
+    basic:
+      enable: true
+    user:
+      name: admin
+      password: admin
+server:
+  port: 8088
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8088/eureka/
