@@ -12,3 +12,5 @@ eureka:
       defaultZone: http://admin:admin@127.0.0.1:8088/eureka/
   instance:
         prefer-ip-address: true
+swagger:
+    enabled: true
