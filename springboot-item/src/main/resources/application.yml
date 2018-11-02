@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-item
+server:
+  port: 8081
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    allow-redirects: true
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8088/eureka/
+  instance:
+        prefer-ip-address: true
