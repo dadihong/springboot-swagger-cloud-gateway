@@ -21,7 +21,7 @@ public class ItemServiceImpl implements ItemService {
     }
     @Override
     public Item findItemById(Integer id) {
-        Item item = map.get(1);
+        Item item = map.get(id);
         return item;
     }
 
